@@ -35,37 +35,42 @@ header .logo {
 }
 
 header nav {
-    margin-right: 1em;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     z-index: 1;
-    overflow: hidden;
+    
 }
 
 .btn-container {
     width: fit-content;
-    margin: 1em 0 0 0;
+    margin: 1em 1em 0 0;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
-.btn-container #toggle-btn{
-    font-weight: 1000;
-    padding: 0.5em 1em;
+.btn-container i {
+    font-size: 1.5rem;
     border: none;
-    color: whitesmoke;
+    color: black;
     cursor: pointer;
-    background-color: rgb(22, 22, 22);
+    /* background-color: rgb(22, 22, 22); */
     transition: all 0.5s;
 }
 
 .li-list {
-    width: 40vw;
-    height: 50vh;
+
+    display: none;
+    width: 100vw;
     background-color: rebeccapurple;
     padding-top: 0.05em;
-    margin-top: 1em;
+    position: relative;
+    top: 10vh;
+
+
+
     
-    display:none;
 }
 
 
