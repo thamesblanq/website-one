@@ -190,6 +190,7 @@ main .text button {
 
 main .text button a {
     text-decoration: none;
+    color: rebeccapurple;
 }
 
 
