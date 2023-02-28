@@ -120,15 +120,20 @@ main {
 main .text {
     width: 70%;
     margin: auto;
-    text-align: center;
     padding-top: 30%;
 }
 
+main .text h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: left;
+}
+
 main .text h4 {
-    font-size: 1rem;
-    line-height: 35px;
-    margin: auto;
-    width: 90%;
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: left;
     padding-bottom: 2em;
     color: whitesmoke;
 }
@@ -180,23 +185,25 @@ main .text button {
     padding: 0.5em 1em;
     border: none;
     font-size: 1.1rem;
+    width: 100%;
     font-weight: 600;
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color: rebeccapurple;
     color: rgb(22, 22, 22);
+    text-align: center;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 main .text button a {
     text-decoration: none;
-    color: rebeccapurple;
+    color: whitesmoke;
 }
 
 
 main .text button:hover, main .text button:focus {
     color: whitesmoke;
-    box-shadow: 0px 0px 10px rebeccapurple;
+    transform: translateY(-10%);
 }
 
 footer {
@@ -218,7 +225,6 @@ footer .quick-links nav li {
 
 footer .quick-links nav li a {
     font-size: 0.7rem;
-    text-decoration: underline;
     font-weight: 500;
     padding: 0.5em;
     border-radius: 5px;
@@ -228,6 +234,7 @@ footer .quick-links nav li a {
 footer .quick-links nav li a:hover, footer .quick-links nav li a:focus {
     background-color: rgb(22, 22, 22);
     color: whitesmoke;
+    text-decoration: underline;
 }
 
 footer .socials nav li {
@@ -238,7 +245,6 @@ footer .socials nav li {
 footer .socials nav li a {
     font-size: 0.7rem;
     font-weight: 500;
-    text-decoration: underline;
     padding: 0.5em;
     border-radius: 5px;
     color: whitesmoke;
@@ -247,6 +253,7 @@ footer .socials nav li a {
 footer .socials nav li a:hover, footer .socials nav li a:focus {
     background-color: rgb(22, 22, 22);
     color: whitesmoke;
+    text-decoration: underline;
 }
 
 @media  screen and (min-width: 576px) {
@@ -270,27 +277,32 @@ footer .socials nav li a:hover, footer .socials nav li a:focus {
     
  
     main {
-        height: 90vh;
+        height: 100vh;
     }
 
     main .text {
         width: 80%;
-        padding-top: 15%;
+        padding-top: 10%;
+    }
+
+    main .text h1 {
+        font-size: 5rem;
     }
 
     main .text h4 {
         font-size: 1.3rem;
-        width: 100%;
+        width: 50%;
+        font-weight: 600;
+        line-height: 35px;
     }
 
     main .text button {
-        padding: 1em 2em;
+        padding: 1.5em 3em;
         border: none;
         font-size: 1.1rem;
+        width: 30%;
         font-weight: 600;
         border-radius: 5px;
-        background-color: whitesmoke;
-        color: rgb(22, 22, 22);
         cursor: pointer;
         transition: all 0.5s;
     }
